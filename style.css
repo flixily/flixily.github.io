@@ -31,7 +31,7 @@
 @import 'css/magnific-popup.css';
 @import 'css/owl.carousel.min.css';
 @import 'css/slick.css';
-@import 'css/font-awesome.min.css';
+/* @import 'css/font-awesome.min.css'; */
 @import 'css/themify-icons.css';
 @import 'css/ionicons.min.css';
 
@@ -332,6 +332,10 @@ p {
     padding: 0 4%;
 }
 
+.header_area .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.75)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
 .menu_area .navbar-brand {
     font-size: 72px;
     font-weight: 700;
@@ -582,6 +586,7 @@ p {
 }
 
 .single-special:hover {
+    border: 2px solid  #fb397d;
     -webkit-box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
             box-shadow: 0 10px 90px rgba(0, 0, 0, 0.08);
 }
@@ -662,8 +667,18 @@ p {
 :: 5.0 Features Area CSS
 -------------------------- */
 
+.single-feature-wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .single-feature {
     margin-bottom: 50px;
+}
+
+.single-feature > h5 {
+    display: inline;
 }
 
 .single-feature > p {
